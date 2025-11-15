@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications | SCE Leave Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="form-page">
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo-link">
+                <img src="image/no.avif" alt="Notification Logo" class="logo" />
+            </a>
+            <h1 class="site-title">Notification</h1>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="center-box">
+        <h2>Notifications</h2>
+        <p>Here are your recent leave notifications:</p>
+
+        <ul class="notification-list" id="notificationList">
+            <!-- Notifications will be dynamically added via JS -->
+        </ul>
+
+        <p id="noNotif" style="color:#333; font-size:16px; margin-top:20px; display:none;">
+            You have no new notifications.
+        </p>
+
+        <a href="javascript:history.back()" class="back-btn">← Back</a>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Samtse College | Leave Management System
+    </footer>
+
+    <script>
+        // Sample notifications array (replace with dynamic data later)
+        const notifications = [
+            { id: 1, text: "Your leave request for 12 Nov 2025 has been approved." },
+            { id: 2, text: "Your leave request for 20 Nov 2025 is pending approval." }
+        ];
+
+        const notifList = document.getElementById('notificationList');
+        const noNotif = document.getElementById('noNotif');
+
+        if (notifications.length > 0) {
+            notifications.forEach(notif => {
+                const li = document.createElement('li');
+                li.textContent = notif.text;
+                li.classList.add('notif-item');
+                notifList.appendChild(li);
+            });
+        } else {
+            noNotif.style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>

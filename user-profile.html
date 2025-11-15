@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+  <div class="profile-container">
+    <header>
+      <button class="back-btn" onclick="history.back()" aria-label="Go back">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <h1>User Profile</h1>
+
+      <button class="notif-btn" aria-label="Notifications">
+        <i class="fa-regular fa-bell"></i>
+      </button>
+    </header>
+
+    <section class="profile-card">
+      <div class="profile-img-wrapper">
+        <img src="image/pic.jpg" alt="Profile Picture" class="profile-img" />
+        <button class="edit-btn" aria-label="Edit profile">
+          <i class="fa-solid fa-pen"></i>
+        </button>
+      </div>
+
+      <h2 class="username">Rinchen Dema</h2>
+
+      <div class="info">
+        <div class="info-item">
+          <i class="fa-solid fa-id-badge"></i>
+          <span>Enrollment ID: <strong>08230177</strong></span>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Semester: <strong>5th</strong></span>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email: <strong>08230177.sce@rub.edu.bt</strong></span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a href="leave.html" class="btn btn-primary">
+          <i class="fa-regular fa-file-lines"></i> Leave Status
+        </a>
+        <a href="profile.html" class="btn btn-secondary">
+          <i class="fa-regular fa-user"></i> Profile
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

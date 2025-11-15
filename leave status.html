@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Status | SCE Leave Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="leave-status-bg">  <!-- ✅ ONLY THIS LINE ADDED -->
+
+  <!-- NAVBAR -->
+  <header class="navbar full-width-bar">
+    <a href="javascript:history.back()" class="back-icon">←</a>
+    <h1 class="site-title">Leave Status</h1>
+
+    <a href="notification.html" class="notif-icon">
+      <span class="icon">🔔</span>
+      <span class="dot"></span>
+    </a>
+  </header>
+
+  <!-- MAIN GRID LAYOUT -->
+  <main class="leave-container">
+
+    <!-- LEFT REPORT SECTION -->
+    <section class="report-section">
+      <h2>Your Leave Records</h2>
+
+      <div class="leave-card">
+        <h3>Pending Leaves</h3>
+        <p>No pending leaves</p>
+      </div>
+
+      <div class="leave-card">
+        <h3>Approved Leaves</h3>
+        <p>No approved leaves</p>
+      </div>
+
+      <div class="leave-card">
+        <h3>Rejected Leaves</h3>
+        <p>No rejected leaves</p>
+      </div>
+    </section>
+
+    <!-- RIGHT APPLY FORM SECTION -->
+    <section class="apply-section">
+      <h2>Apply for Leave</h2>
+
+      <form class="apply-form">
+        <label>Type of Leave</label>
+        <select required>
+          <option value="">Select Type</option>
+          <option>Weekend Leave</option>
+          <option>Weekdays Leave</option>
+          <option>Offical Leave</option>
+          <option>Emergency Leave</option>
+        </select>
+
+        <label>From Date</label>
+        <input type="date" required>
+
+        <label>To Date</label>
+        <input type="date" required>
+
+        <label>Reason</label>
+        <textarea rows="4" placeholder="Explain your reason..." required></textarea>
+
+        <button type="submit" class="apply-btn">
+          Submit Leave Application
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="full-width-bar footer-wide">
+    <p>© 2025 SCE Leave Portal</p>
+  </footer>
+
+</body>
+</html>

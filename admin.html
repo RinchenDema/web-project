@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login | SCE Leave Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="form-page">
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="image/logo.png" alt="SCE Leave Portal Logo" class="logo" />
+      </a>
+      <h1 class="site-title">Admin Dashboard</h1>
+    </div>
+  </header>
+
+  <main class="center-box">
+    <h2>Admin Login</h2>
+    <form id="adminForm">
+      <input type="text" placeholder="Admin ID" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="form-links">
+      <a href="signup.html" class="link-btn">Create an account</a>
+      <a href="forgot-password.html" class="link-btn secondary">Forgot password?</a>
+    </div>
+    <a href="javascript:history.back()" class="back-btn">← Back</a>
+  </main>
+
+  <footer>
+    © 2025 SCE Leave Portal
+  </footer>
+
+  <script>
+    // When admin logs in, redirect to dashboard
+    document.getElementById('adminForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      window.location.href = 'admin-dashboard.html';
+    });
+  </script>
+</body>
+</html>
